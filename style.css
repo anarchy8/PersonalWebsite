@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Poppins:wght@500&family=Roboto&family=Space+Grotesk&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  --main-color: rgba(0, 0, 51, 1);
+  --second-color: #222222;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-color);
+}
+/* headerrrr alanıııııııııııııııııııııııııııııııııııııııııııııııııııııııııııııı */
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  border-bottom: 3px solid white;
+}
+.baslik {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.navbar-icon {
+  width: 10%;
+}
+.navlinks ul {
+  display: flex;
+  gap: 30px;
+}
+.navlink a {
+  color: white;
+  transition: all 0.3s;
+}
+.navlink a:hover {
+  color: crimson;
+}
+/* headerrrr alanıııııııııııııııııııııııııııııııııııııııııııııııııııııııııııııı */
+/* HERO SECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+.hero-section {
+  width: 100%;
+  height: 800px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-section-text {
+  font-size: 30px;
+  color: white;
+}
+.hero-section-text h1 {
+  font-size: 47px;
+  color: rgb(93, 150, 178);
+}
+.hero-section-text h2 {
+  color: red;
+}
+.hero-section-text h4 {
+  letter-spacing: 2px;
+}
+.hero-section button {
+  border-radius: 20px;
+  padding: 8px;
+  border: none;
+  background-color: rgb(93, 150, 178);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero-section button:hover {
+  color: white;
+}
+/* HERO SECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+/* YAZILIM SECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+.yazilim-section {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 51, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.yazilim-section-baslik {
+  color: white;
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.yazilim-section-baslik:hover {
+  background-color: rgb(93, 150, 178);
+}
+.cards {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 128, 0.5);
+  padding: 15px;
+  border-radius: 3px;
+}
+.card i {
+  font-size: 30px;
+}
+/* SERTIFIKALAR SECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+.sertifikalar-section {
+  margin-top: 170px;
+}
+.sert-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.sert-card {
+  width: 20%;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 3px;
+}
+.sert-card img {
+  width: 100%;
+  border-radius: 3px;
+}
+.comment {
+  display: flex;
+  justify-content: space-between;
+}
+.sert-card p {
+  color: white;
+}
+.sert-card h1 {
+  color: white;
+}
+.stars {
+  color: gold;
+}
+/* BASARILAR SECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+.basari-section {
+  margin-top: 100px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.basari-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.basari-img-div {
+  width: 30%;
+}
+.basari-img-div img {
+  width: 100%;
+  border-radius: 4px;
+}
+.colored-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30%;
+  height: 400px;
+  color: white;
+  gap: 10px;
+}
+.colored-box {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 3px;
+  padding: 10px;
+  height: 200px;
+}
+.bi-plus {
+  font-weight: bolder;
+}
+/* REFERANS SECTONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+.reference-section {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 25px;
+  color: white;
+  width: 100%;
+  gap: 10px;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  gap: 5px;
+}
+.comment img {
+  width: 50%;
+  border-radius: 100px;
+}
+.bi-heart-fill {
+  color: red;
+}
+/* ILETISIME GECCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC */
+.iletisim-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.iletisim-img-div {
+  width: 30%;
+}
+.iletisim-img-div img {
+  width: 100%;
+  border-radius: 4px;
+}
+.form-alani {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  background-color: gray;
+  border-radius: 4px;
+  padding: 40px;
+}
+.form-alani input {
+  width: 400px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: var(--second-color);
+  font-family: "Poppins", sans-serif;
+}
+.gönder-btn {
+  padding: 10px 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: crimson;
+  font-family: "Poppins", sans-serif;
+}
+/* footerrrrrr divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+.footer-div {
+  width: 100%;
+  padding: 60px;
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: space-around;
+}
+.footer-piece {
+  color: white;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-icons {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+.footer-icons i {
+  font-size: 25px;
+  color: crimson;
+}
+.footer-piece a {
+  color: white;
+}
+.footer-piece input {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 7px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background-color: crimson;
+}
+.footer-altyazi {
+  display: flex;
+  justify-content: center;
+  background-color: var(--second-color);
+  color: white;
+  height: 40px;
+}
+/* RESPONSIVEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+@media screen and (max-width: 576px) {
+  .baslik {
+    margin-left: 20px;
+    width: 100%;
+    font-size: 25px;
+  }
+  .baslik img {
+    width: 65px;
+  }
+  .navlink {
+    display: none;
+  }
+  .navbar-menu-icon {
+    margin-right: 20px;
+    font-size: 45px;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-section-img img {
+    margin-top: 30px;
+    margin-right: 25px;
+    width: 350px;
+  }
+  .yazilim-section {
+    height: 340px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+  }
+  .sertifikalar-section {
+    margin-top: 160px;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sert-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .sert-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .basari-section {
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 992px) {
+}
