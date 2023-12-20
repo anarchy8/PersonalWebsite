@@ -14,11 +14,14 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 /* headerrrr alanıııııııııııııııııııııııııııııııııııııııııııııııııııııııııııııı */
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 .navbar {
@@ -38,6 +41,9 @@ body {
 }
 .navbar-icon {
   width: 10%;
+}
+.navbar-menu-icon i {
+  display: none;
 }
 .navlinks ul {
   display: flex;
@@ -325,69 +331,136 @@ body {
 }
 /* RESPONSIVEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
 @media screen and (max-width: 576px) {
-  .baslik {
-    margin-left: 20px;
+  .navbar {
     width: 100%;
-    font-size: 25px;
   }
-  .baslik img {
-    width: 65px;
-  }
-  .navlink {
+  .navbar ul {
     display: none;
   }
-  .navbar-menu-icon {
-    margin-right: 20px;
-    font-size: 45px;
+  .navbar-menu-icon i {
+    display: block;
+    margin-right: 390px;
+    color: white;
+    font-size: 60px;
   }
   .hero-section {
-    display: flex;
+    margin-bottom: 30px;
+  }
+  .hero-section-text {
+    margin-top: 100px;
+  }
+  .hero-section img {
+    width: 90%;
+  }
+  .yazilim-section .cards {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 140px;
+    margin-top: 200px;
+  }
+  .sertifikalar-section {
+    margin-top: 260px;
+  }
+  .sertifikalar-section .sert-card {
+    width: 45%;
+  }
+  .colored-boxes {
+    margin-left: 120px;
+  }
+  .comment {
+    text-align: center;
+  }
+  .iletisim-img-div {
+    display: none;
+  }
+  .iletisim-section form {
+    width: 90%;
+  }
+  .footer-div {
+    flex-direction: column;
+  }
+  .footer-div input {
+    width: 150px;
+  }
+  .footer-div button {
+    width: 150px;
+  }
+  .footer-altyazi {
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height: 200px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 800px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar ul {
+    gap: 10px;
+  }
+  .navbar-icon {
+    width: 50px;
+  }
+  .hero-section {
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-  .hero-section-img img {
-    margin-top: 30px;
-    margin-right: 25px;
-    width: 350px;
-  }
-  .yazilim-section {
-    height: 340px;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
-  .card {
-    width: 90%;
+  .hero-section img {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
-  .sertifikalar-section {
-    margin-top: 160px;
-    height: 2000px;
-    display: flex;
-    flex-direction: column;
+  .yazilim-section .cards {
+    margin-right: 10px;
+  }
+  .yazilim-section .card {
+    margin-left: 10px;
+    width: 100%;
   }
   .sert-cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 500px;
   }
   .sert-card {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+    width: 40%;
     align-items: center;
+    text-align: center;
+    justify-content: center;
   }
-  .basari-section {
-  }
-}
 
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 992px) {
+  .basari-section {
+    height: 800px;
+    margin-bottom: 40px;
+  }
+  .colored-boxes {
+    margin-right: 320px;
+  }
+  .basari-section img {
+    display: none;
+  }
+  .basarilarim-section-baslik {
+    margin-top: 300px;
+  }
+  .form-alani {
+    padding: 15px;
+    width: 50%;
+    gap: 10px;
+  }
+  .form-alani input {
+    width: 100%;
+  }
+  .footer-div {
+    gap: 40px;
+  }
 }
