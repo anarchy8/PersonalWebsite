@@ -2,4 +2,5 @@
 
 <h1>Antidepresanımın katkılarıyla </h1>
 
-![GIF]("C:\Users\anarchy\Desktop\coding\PersonalWebsite\img\ezgif.com-speed.gif")
+![ezgif com-video-to-gif-converted](https://github.com/anarchy8/PersonalWebsite/assets/109462101/07f32f69-d124-4041-9baf-b72f5774a383)
+
